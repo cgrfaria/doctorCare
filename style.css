@@ -45,7 +45,7 @@ body {
 }
 
 section {
-  padding: 10rem 0;
+  padding-block: 10rem;
 }
 
 section header h4 {
@@ -271,6 +271,7 @@ body.menu-expanded .logo button path {
 /*********************** HOME ***********************/
 
 #home {
+  padding-block: 0;
   padding-top: calc(4.1rem + var(--nav-height));
 }
 
@@ -278,7 +279,7 @@ body.menu-expanded .logo button path {
   content: '';
   display: block;
   width: 100%;
-  height: calc(108rem + var(--nav-height));
+  height: calc(73% + var(--nav-height));
   position: absolute;
   top: 0;
   left: 0;
@@ -444,10 +445,17 @@ footer .social-links {
 
 @media (min-width: 1024px) {
   /*********************** GERAL ***********************/
+  body {
+    overflow: auto;
+  }
   .wrapper {
     width: min(112rem, 100%);
+    display: grid;
   }
-  /*********************** NAVIGATION ***********************/
+  section {
+    padding-block: 1.6rem;
+  }
+  /********************* NAVIGATION ***********************/
   /* reset */
   nav#navigation .wrapper * {
     margin: 0;
@@ -472,7 +480,7 @@ footer .social-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 64%;
   }
   nav#navigation .menu ul:nth-child(1) {
     display: flex;
@@ -544,5 +552,52 @@ footer .social-links {
     border-color: var(--primary);
     background-color: var(--primary);
     filter: brightness(1.1);
+  }
+  /********************* HOME ***********************/
+  #home::before {
+    height: calc(92.5% - var(--nav-height));
+  }
+  #home {
+    padding-top: var(--nav-height);
+  }
+  #home .wrapper {
+    grid-template-columns: 60.5rem 1fr;
+    grid-template-areas: 'A B' 'C C';
+  }
+  #home .col-a {
+    grid-area: A;
+    text-align: left;
+    align-self: center;
+  }
+  #home .col-b {
+    grid-area: B;
+  }
+  #home h1 {
+    font-size: 5.2rem;
+  }
+  #home .content p {
+    font-size: 1.8rem;
+  }
+  #home .button {
+    margin: 0;
+  }
+  #home img {
+    width: 42rem;
+  }
+  #home .stats {
+    grid-area: C;
+    flex-direction: row;
+    padding: 6rem;
+    gap: 0;
+  }
+  #home .stats .stat + .stat {
+    border-left: 1px solid var(--primary);
+  }
+  #home .stats .stat {
+    flex: 1;
+  }
+
+  #services {
+    padding-top: 16rem;
   }
 }
