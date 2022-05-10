@@ -113,7 +113,7 @@ img {
 }
 
 .wrapper {
-  width: 37.5rem;
+  width: min(50rem, 100%);
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
@@ -160,6 +160,11 @@ nav.scroll {
   background-color: var(--primary);
 }
 
+nav .menu,
+nav .close-menu {
+  position: fixed;
+}
+
 nav button {
   background: none;
   border: none;
@@ -190,7 +195,6 @@ body.menu-expanded .close-menu {
 }
 
 body.menu-expanded .menu {
-  position: fixed;
   top: 0;
   left: 0;
   background-color: var(--primary);
@@ -305,7 +309,7 @@ body.menu-expanded .logo button path {
   flex-direction: column;
   justify-content: center;
   gap: 6rem;
-  width: 32.7rem;
+  width: 100%;
   padding: 4rem 0;
   margin: 0 auto;
   background-color: var(--primary-beige);
