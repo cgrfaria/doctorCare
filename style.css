@@ -622,7 +622,7 @@ footer .social-links {
     padding-top: 16rem;
   }
   #about .wrapper {
-    grid-template-columns: 48rem 57.3rem;
+    grid-template-columns: 48rem 51.3rem;
     grid-template-areas: 'B A';
     gap: 6.7rem;
   }
