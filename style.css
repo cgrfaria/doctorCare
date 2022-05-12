@@ -641,7 +641,7 @@ footer .social-links {
     padding: 16rem 0;
   }
   #contact .wrapper {
-    grid-template-columns: 40.4rem 57.5rem;
+    grid-template-columns: 40.4rem 1fr;
     grid-template-areas: 'A B';
     gap: 14.1rem;
   }
