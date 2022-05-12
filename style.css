@@ -443,7 +443,7 @@ footer .social-links {
 
 /*********************** RESPONSIVE ***********************/
 
-@media (min-width: 1024px) {
+@media (min-width: 1030px) {
   /*********************** GERAL ***********************/
   body {
     overflow: auto;
@@ -632,9 +632,9 @@ section header h2 {
   /**************** CONTACT *******************/
 
   #contact .wrapper {
-    grid-template-columns: 1fr 57.5rem;
+    grid-template-columns: 1fr 55.5rem;
     grid-template-areas: 'A B';
-    gap: 14.1rem;
+    /*gap: 14.1rem;*/
   }
   
   #contact h2 {
