@@ -453,7 +453,7 @@ footer .social-links {
     display: grid;
   }
   section {
-    padding-block: 1.6rem;
+    padding-block: 16rem;
   }
   .col-a {
     grid-area: A;
@@ -461,7 +461,11 @@ footer .social-links {
   .col-b {
     grid-area: B;
   }
-  /********************* NAVIGATION ***********************/
+section header h2 {
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+    /********************* NAVIGATION ***********************/
   /* reset */
   nav#navigation .wrapper * {
     margin: 0;
@@ -599,14 +603,9 @@ footer .social-links {
     flex: 1;
   }
   /***************** SERVICES *******************/
-  #services {
-    padding-top: 16rem;
-  }
   #services h2 {
-    font-size: 4rem;
-    line-height: 5.2rem;
-    width: 49.7rem;
-    margin: 0 auto;
+    width: 47rem;
+    margin-inline: auto;
   }
   #services .cards {
     flex-direction: row;
@@ -618,46 +617,34 @@ footer .social-links {
     flex-grow: 1;
   }
   /**************** ABOUT *******************/
-  #about {
-    padding-top: 16rem;
-  }
+  
   #about .wrapper {
-    grid-template-columns: 48rem 51.3rem;
+    grid-template-columns: 48rem 1fr;
     grid-template-areas: 'B A';
     gap: 6.7rem;
   }
   #about .col-a {
     align-self: center;
   }
-  #about h2 {
-    font-size: 4rem;
-    line-height: 5.2rem;
-  }
   #about .content p {
-    margin: 0;
+    margin-bottom: 0;
   }
   /**************** CONTACT *******************/
-  #contact {
-    padding: 16rem 0;
-  }
+
   #contact .wrapper {
-    grid-template-columns: 40.4rem 1fr;
+    grid-template-columns: 1fr 57.5rem;
     grid-template-areas: 'A B';
     gap: 14.1rem;
   }
-  #contact .col-a {
-    align-self: center;
-  }
+  
   #contact h2 {
-    font-size: 4rem;
-    line-height: 5.2rem;
+    width: 40.4rem;
   }
   /**************** FOOTER *******************/
   footer {
     padding-block: 8rem;
   }
   footer .wrapper {
-    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
   }
@@ -666,7 +653,7 @@ footer .social-links {
   }
   footer .col-b {
     align-self: center;
-    justify-self: end;
+    justify-self: flex-end;
   }
   footer p {
     margin-bottom: 0;
